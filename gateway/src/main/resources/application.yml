@@ -1,0 +1,28 @@
+server:
+  port: 3031
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          gateway: debug
+spring:
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          lower-case-service-id: true  #开启服务名称小写
+          enabled: true  #开启eureka动态路由
+  application:
+    name: gateway
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    fetch-registry: true
+    region: dianxin
+  instance:
+    metadata-map:
+      zone: zone-1

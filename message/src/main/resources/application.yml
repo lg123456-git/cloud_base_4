@@ -1,0 +1,28 @@
+spring:
+  mail:
+    host: smtp.qq.com
+    username: 964764278@qq.com
+    password: sjgnxrsiohjqbdec
+    default-encoding: utf-8
+    port: 465
+    properties:
+      mail:
+        smtp:
+          ssl:
+            enable: true
+  application:
+    name: message
+  redis:
+    host: 101.200.128.27
+    #password: 123456
+    database: 0
+
+server:
+  port: 6060
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+    register-with-eureka: true

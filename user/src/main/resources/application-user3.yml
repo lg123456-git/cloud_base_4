@@ -1,0 +1,14 @@
+server:
+  port: 4043
+
+eureka:
+  client:
+    region: wangtong
+    prefer-same-zone-eureka: true
+    availability-zones:
+      wangtong: zone-1
+
+
+  instance:
+    metadata-map:
+      zone: wangtong-zone-1

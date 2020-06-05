@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: user
+    #单个redis的配置
+  redis:
+    host: 101.200.128.27
+    #password: 123456
+    database: 0
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+feign:
+  hystrix:
+    enabled: true
+order:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RandomRule

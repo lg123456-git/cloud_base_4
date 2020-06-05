@@ -1,0 +1,14 @@
+server:
+  port: 5053
+
+eureka:
+  client:
+    region: dianxing
+#    prefer-same-zone-eureka: true
+#    availability-zones:
+#      wangtong: zone-1
+
+
+  instance:
+    metadata-map:
+      zone: zone-1

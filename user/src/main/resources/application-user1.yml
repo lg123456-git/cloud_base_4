@@ -1,0 +1,13 @@
+server:
+  port: 4041
+eureka:
+  client:
+    region: dianxin
+    prefer-same-zone-eureka: true
+    availability-zones:
+      dianxin: zone-1,zone-2
+
+
+  instance:
+    metadata-map:
+      zone: dianxin-zone-1

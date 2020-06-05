@@ -1,0 +1,14 @@
+server:
+  port: 5052
+
+eureka:
+  client:
+    region: dianxin
+#    prefer-same-zone-eureka: true
+#    availability-zones:
+#      dianxin: zone-2,zone-1
+
+
+  instance:
+    metadata-map:
+      zone: zone1
