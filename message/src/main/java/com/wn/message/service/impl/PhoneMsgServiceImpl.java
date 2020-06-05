@@ -16,7 +16,7 @@ import java.util.Random;
 /**
  * @BelongsProject: cloud_base_4
  * @BelongsPackage: com.wn.message.service.impl
- * @Author: 廖刚
+ * @Author: 廖刚 测试
  * @CreateTime: 2020-06-03 23:00
  * @Description:
  */
