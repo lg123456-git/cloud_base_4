@@ -28,7 +28,7 @@ public class PhoneMsgServiceImpl implements PhoneMsgService {
 
     @Override
     public void sendPhoneMsg(String phoneNum) {
-        DefaultProfile profile = DefaultProfile.getProfile("cn-hangzhou", "LTAI4G3r15F3Ybkh9NTfFSt4", "7vmyM5bxgwcySyH7GAalJl8IoMBB2h");
+        //这里需要key
         IAcsClient client = new DefaultAcsClient(profile);
 
         CommonRequest request = new CommonRequest();
